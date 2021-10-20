@@ -1,0 +1,592 @@
+@font-face {
+  font-family: 'main-font2';
+  src: url('./fonts/SpotlightDemoItalic-Rppne.otf') format('opentype');
+
+  font-family: 'main-font';
+  src: url('./fonts/Lazer84.ttf') format('truetype');
+
+  font-family: 'header-font';
+  src: url('./fonts/Frenchpress\ freefont.otf') format('opentype'); 
+
+}
+
+
+body{
+  background-color: rgb(176, 214, 221);
+}
+/* .tabcontent{
+  background-color: black;
+} */
+
+.content-wrapper{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.header-wrapper{
+  text-align: center;
+}
+
+.header-main-text-wrapper{
+  font-family: 'header-font';
+  font-size: 3em;
+  margin: 0;
+  letter-spacing: 0.1em;
+  
+} 
+
+.header-main-text-wrapper h1{
+  margin: 0;
+  border-bottom: 6px solid rgb(141, 59, 73);
+  color: rgb(141, 59, 73);
+
+}
+.header-sub-text-wrapper{
+  font-family: 'header-font';
+  font-size: 2em;
+}
+
+.form-content-wrapper{
+  width: 70%;
+}
+label{
+  cursor: pointer;
+}
+
+.-text-wrapper{
+  border-bottom:solid 5px white;
+}
+
+input:checked + label{
+  border-bottom: 4px solid white;
+}
+/* input[type = 'checkbox']:checked + label{
+  bo
+} */
+
+/* Form Styles */
+.section-wrapper input[type ='radio']{
+  display: none;
+}
+.section-wrapper input[type = 'checkbox']{
+  display: none;
+}
+
+.protein-text-wrapper{
+  padding: 10px;
+  background-color: #d55858;
+}
+ .input-type {
+
+  font-family: "main-font";
+  color: white;
+  font-size: 3vw;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+
+ }
+
+ label{
+   font-family: "main-font";
+   color: white;
+   font-style: italic;
+   font-size: 2vw;
+ }
+
+ input[type = 'checkbox']:checked + label{
+   background: rgba(0, 0, 0, 0.6);
+ }
+
+ /* Protien styles */
+
+ /* BEEF */
+ .protein-input-wrapper label[for ='beef-protein']{
+  background-color: rgb(84,38 ,38);
+
+ }
+ .protein-input-wrapper label[for ='beef-protein']:hover{
+ 
+  /* background-image: url("./images/burger/protein/beef-protein.jpeg");
+  background-size: cover; */
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/beef-protein.jpeg');
+  background-size: cover;
+
+ }
+ #beef-protein:checked+label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/beef-protein.jpeg');
+  background-size: cover;
+ }
+
+ /* CHICKEN */
+
+ .protein-input-wrapper label[for ='chicken-protein']{
+  background-color: rgb(124, 56, 56);
+
+ }
+
+ #chicken-protein:checked+label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/chicken-protein.jpeg');
+  background-size: cover;
+ }
+
+ .protein-input-wrapper label[for = 'chicken-protein']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/chicken-protein.jpeg');
+  background-size: cover;
+   
+ }
+
+ /* VEGATERIAN */
+
+ .protein-input-wrapper label[for ='vegeterian-protein']{
+  background-color: rgb(167, 73, 74);
+
+ }
+
+ .protein-input-wrapper label[for = 'vegeterian-protein']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/vegeterian-protein.jpeg');
+  background-size: cover;
+ }
+
+ #vegeterian-protein:checked+label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/vegeterian-protein.jpeg');
+  background-size: cover;
+ }
+
+ /* VEGAN */
+
+ .protein-input-wrapper label[for = 'vegan-protein']{
+   background-color: #b56061;
+ }
+
+ .protein-input-wrapper label[for = 'vegan-protein']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/vegan-protein.jpeg');
+  background-size: cover;
+ }
+
+ #vegan-protein:checked+label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/protein/vegan-protein.jpeg');
+  background-size: cover;
+ }
+
+ .protein-input-wrapper{
+   display: flex;
+ }
+
+ .protein-input-wrapper label{
+   padding: 20px;
+   width: 25%;
+   
+ }
+
+
+
+
+/* Bun styles */
+.bun-text-wrapper{
+  background-color: #cf834e;
+  padding: 10px;
+  border-bottom: blanchedalmond solid 4px;
+}
+.bun-input-wrapper{
+  display: flex;
+}
+.bun-input-wrapper label{
+   padding: 20px;
+   width: 25%;
+}
+
+/* POTATO */
+
+.bun-input-wrapper label[for='potato-bun']{
+  background-color: rgb(159,102, 62);
+}
+
+.bun-input-wrapper label[for = "potato-bun"]:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/potato-bun.jpeg');
+  background-size: cover;
+}
+
+#potato-bun:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/potato-bun.jpeg');
+  background-size: cover;
+}
+/* SEEDED */
+
+.bun-input-wrapper label[for='seeded-bun']{
+  background-color: rgb(173, 136, 80);
+}
+
+.bun-input-wrapper label[for = "seeded-bun"]:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/seeded-bun.jpeg');
+  background-size: cover;
+
+}
+
+#seeded-bun:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/seeded-bun.jpeg');
+  background-size: cover;
+}
+
+/* GLUTEN-FREE */
+
+.bun-input-wrapper label[for='gluten-free-bun']{
+  background-color: rgb(207, 181, 122);
+}
+
+.bun-input-wrapper label[for = "gluten-free-bun"]:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/gluten-free-bun.jpeg');
+  background-size: cover;
+}
+
+#gluten-free-bun:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/gluten-free-bun.jpeg');
+  background-size: cover;
+}
+
+/* NO-BUN */
+
+.bun-input-wrapper label[for='no-bun']{
+  background-color: rgb(227, 209, 177);
+}
+
+.bun-input-wrapper label[for = "no-bun"]:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/no-bun.jpeg');
+  background-size: cover;
+}
+
+#no-bun:checked+label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/bun/no-bun.jpeg');
+  background-size: cover;
+}
+
+/* .bun-input-wrapper input[type = 'radio']:checked + label{
+  display: block;
+  background-color: teal;
+}  */
+
+/* Garnish Styles */
+
+/* Lettace */
+.garnish-input-wrapper label[for = 'lettace-garnish']{
+  /* background-image: url("./images/burger/garnish/lettace-garnish.jpeg"); */
+  background-color: #285e43;
+
+}
+
+.garnish-input-wrapper label[for = 'lettace-garnish']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/lettace-garnish.jpeg');
+  background-size: cover;
+}
+
+#lettace-garnish:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/lettace-garnish.jpeg');
+  background-size: cover;
+  
+
+}
+/* TOMATO */
+.garnish-input-wrapper label[for = 'tomato-garnish']{
+  /* background-image: url('./images/burger/garnish/tomato-garnish.jpeg'); */
+  background-color: #267c61;
+}
+
+.garnish-input-wrapper label[for = 'tomato-garnish']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/tomato-garnish.jpeg');
+  background-size: cover;
+}
+
+#tomato-garnish:checked + label {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/tomato-garnish.jpeg');
+  background-size: cover;
+  
+}
+/* PICKLE */
+.garnish-input-wrapper label[for = 'pickle-garnish']{
+  background-color: #299170;
+}
+.garnish-input-wrapper label[for = 'pickle-garnish']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/pickles-garnish.jpeg');
+  background-size: cover;
+}
+
+#pickle-garnish:checked + label {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/pickles-garnish.jpeg');
+  background-size: cover;
+}
+
+/* ONIONS */
+.garnish-input-wrapper label[for = 'onions-garnish']{
+  background-color: #30ad85;
+}
+.garnish-input-wrapper label[for = 'onions-garnish']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/caramelised-onions-garnish.jpg');
+  background-size: cover;
+}
+
+#onions-garnish:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/caramelised-onions-garnish.jpg');
+  background-size: cover;
+}
+
+/* KIMCHI */
+.garnish-input-wrapper label[for = 'kimchi-garnish']{
+  background-color: #34c194;
+}
+
+.garnish-input-wrapper label[for = 'kimchi-garnish']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/kimchi-garnish.jpeg');
+  background-size: cover;
+}
+
+#kimchi-garnish:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/garnish/kimchi-garnish.jpeg');
+  background-size: cover;
+}
+
+
+.garnish-text-wrapper{
+  padding: 10px;
+  background-color: #246c5c;
+}
+.garnish-input-wrapper{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.garnish-input-wrapper label{
+  padding: 20px;
+  width: 20%;
+  background-color: wheat;
+  /* border: solid 2px white; */
+}
+
+
+
+/* Cheese Styles */
+.cheese-input-wrapper{
+  display: flex;
+}
+.cheese-text-wrapper{
+  padding: 10px;
+  background-color: #e5c892;
+}
+
+.cheese-input-wrapper label{
+  padding: 20px;
+  width: 25%;  
+}
+/* CHEDDAR */
+.cheese-input-wrapper label[for ='cheddar-cheese']{
+  background-color: rgb(237, 160, 18);
+}
+
+.cheese-input-wrapper label[for ='cheddar-cheese']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/cheddar-cheese.jpeg');
+  background-size: cover;
+}
+
+#cheddar-cheese:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/cheddar-cheese.jpeg');
+  background-size: cover;
+}
+/* BRIE */
+.cheese-input-wrapper label[for = 'brie-cheese']{
+  background-color: #e9af46;
+}
+
+.cheese-input-wrapper label[for = 'brie-cheese']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/brie-cheese.jpeg');
+  background-size: cover;
+}
+
+#brie-cheese:checked+ label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/brie-cheese.jpeg');
+  background-size: cover;
+}
+
+/* FETA */
+.cheese-input-wrapper label[for ='feta-cheese']{
+  background-color: rgb(255, 208, 123);
+}
+
+.cheese-input-wrapper label[for ='feta-cheese']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/feta-cheese.jpeg');
+  background-size: cover;
+}
+
+#feta-cheese:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/feta-cheese.jpeg');
+  background-size: cover;
+}
+/* NO-CHEESE */
+.cheese-input-wrapper label[for ='no-cheese']{
+  background-color: rgb(225, 191, 130);
+}
+
+
+.cheese-input-wrapper label[for ='no-cheese']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/no-cheese.jpeg');
+  background-size: cover;
+}
+
+#no-cheese:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/cheese/no-cheese.jpeg');
+  background-size: cover;
+}
+
+/* Sauce Styles */
+.sauce-input-wrapper{
+  display: flex;
+}
+.sauce-text-wrapper{
+  padding:10px;
+  background-color: #ebabb6;
+}
+
+.sauce-input-wrapper label{
+  padding: 20px;
+  width: 25%;
+  
+}
+/* TOMATO-SAUCE */
+.sauce-input-wrapper label[for ='tomato-sauce']{
+  background-color: rgb(197 ,93, 111);
+}
+
+.sauce-input-wrapper label[for ='tomato-sauce']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/tomato-sauce.jpeg');
+  background-size: cover;
+}
+
+#tomato-sauce:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/tomato-sauce.jpeg');
+  background-size: cover;
+}
+
+/* MAYO-SAUCE */
+.sauce-input-wrapper label[for ='mayo-sauce']{
+  background-color: rgb(211 ,130, 144);
+}
+
+.sauce-input-wrapper label[for ='mayo-sauce']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/mayo-sauce.jpeg');
+  background-size: cover;
+}
+
+#mayo-sauce:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/mayo-sauce.jpeg');
+  background-size: cover;
+}
+
+/* FRENCH-GLAZE */
+.sauce-input-wrapper label[for ='french-sauce']{
+  background-color: rgb(223, 151, 163);
+}
+
+.sauce-input-wrapper label[for ='french-sauce']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/french-glaze-sauce.jpeg');
+  background-size: cover;
+}
+
+#french-sauce:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/french-glaze-sauce.jpeg');
+  background-size: cover;
+}
+
+/* NO-SAUCE */
+.sauce-input-wrapper label[for ='no-sauce']{
+  background-color: rgb(253, 200, 210);
+}
+
+.sauce-input-wrapper label[for ='no-sauce']:hover{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/no-sauce.jpeg');
+  background-size: cover;
+}
+
+#no-sauce:checked + label{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/burger/sauce/no-sauce.jpeg');
+  background-size: cover;
+}
+
+
+
+
+
+/* Submit-button styles */
+.submit-wrapper input{
+  padding: 20px 80px;
+  margin-top: 40px;
+}
+
+
+/* Tab styles */
+.tab {
+  overflow: hidden;
+  
+  background-color: #f1f1f1;
+  /* width: 70%; */
+  
+}
+
+
+.tab button {
+  width: 50%;
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 2em;
+  font-family: 'main-font';
+  letter-spacing: 0.2em;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: rgb(141, 59, 73);
+  color: #ccc;
+}
+
+
+.tabcontent {
+  display: none;
+  
+  /* border: 1px solid #ccc; */
+  border-top: none;
+  justify-content: center;
+  /* width: 70%; */
+  background-color: rgb(108, 63, 71);
+  margin: 0px;
+  
+}
+
+.burger-form-wrapper{
+  text-align: center;
+}
+
+/* Guide styles */
+
+.guide-wrapper{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* border-bottom: 5px rgb(108, 63, 71) solid; */
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.guide-text-img-wrapper{
+  margin: 0 40px;
+  font-family: 'header-font';
+  font-size: 2em;
+  color: rgb(108, 63, 71);
+  /* border-left: 5px rgb(108, 63, 71) solid; */
+}
+

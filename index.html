@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <title>Build a B!</title>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Welcome banner -->
+    <header class = "header-wrapper">
+      <div class="header-text-wrapper">
+        <div class="header-main-text-wrapper"><h1>Build a     B</h1></div>
+        <div class="header-sub-text-wrapper"><h3>Welcome to Build a B! Build a burger or bowl to your liking by choosing your own personalised ingredients!</h3></div>
+      </div>
+    </header>
+
+    <!-- Short guide on how to use website (might change into a list) -->
+    <div class="guide-wrapper">
+      <div class="guide-text-img-wrapper">
+        <h3>Pick your protein</h3>
+        <img src="./images/Icons/protein.png" alt="">
+      </div>
+      <div class="guide-text-img-wrapper">
+        <h3>Pick your bun</h3>
+        <img src="./images/Icons/bun.png" alt="">
+      </div>
+      <div class="guide-text-img-wrapper">
+        <h3>Pick your garnish</h3>
+        <img src="./images/Icons/garnish.png" alt="">
+      </div>
+      <div class="guide-text-img-wrapper">
+        <h3>Pick your cheese</h3>
+        <img src="./images/Icons/cheese.png" alt="">
+      </div>
+      <div class="guide-text-img-wrapper">
+        <h3>Pick your sauce</h3>
+        <img src="./images/Icons/sauce.png" alt="">
+      </div>
+      </div>
+
+     
+    </div>
+    <!-- Tab links -->
+
+    <main class = 'content-wrapper'>
+      <script src = "tabs.js"></script>
+     <!-- <script src = "order.js"></script> -->
+    
+      <div class="form-content-wrapper">
+
+       <div class="tab">
+          <button class = 'tablinks' onclick="openTab(event, 'Burger')">Burger</button>
+          <button class = 'tablinks' onclick="openTab(event, 'Bowl')">Bowl</button>
+      </div>
+        
+       <div class="tabcontent" id = "Burger">
+
+        <form class = "burger-form-wrapper"  method="GET" id = "burger-form">
+
+          <!-- PROTEIN -->
+          <div class="protein-wrapper">
+            <div class="section-wrapper">
+              <div class="protein-text-wrapper">
+                <h4 class = "input-type">Protein</h4>
+              </div>
+              <div class="protein-input-wrapper">
+                <input type="radio" name = "protein-type" id = 'beef-protein' value="beef-protein" >
+                <label for = "beef-protein" class="beef-patty">Beef</label>
+                <input type="radio" name = "protein-type" id = 'chicken-protein' value = 'chicken-protein'>
+                <label for = 'chicken-protein' class = 'chicken-protein'>Chicken</label>  
+                <input type="radio" name = "protein-type" id = 'vegeterian-protein' value = 'vegeterian-protein'>
+                <label for = "vegeterian-protein" class = "vegeterian-protein">Vegeterian</label>
+                <input type ="radio" name = "protein-type" id = 'vegan-protein' value = 'vegan-protein'>
+                <label for = 'vegan-protein' class = 'vegan-protein'>Vegan</label>
+              </div>
+              <div class="protein-doneness-wrapper">
+                <div class="doneness-text-wrapper">
+                  <h4 class = 'input-type'>doneness</h4>
+                </div>
+                <span>Rare</span>
+                <input type = "range" name = "doneness" id = "doneness" min = 1 max = 5 value = 3>
+                <span>Welldone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bun-wrapper">
+            <div class="section-wrapper">
+              <div class="bun-text-wrapper">
+                <h4 class = "input-type">Bun:</h4>
+              </div>
+              <div class="bun-input-wrapper">
+                <input type = "radio" name = "bun-type" id = 'potato-bun' value="potato-bun">
+                <label for = "potato-bun">Potato</label>
+                <input type = "radio" name = "bun-type" id = "seeded-bun" value = "seeded-bun">
+                <label for = "seeded-bun">Seeded</label>
+                <input type= "radio" name = 'bun-type' id = "gluten-free-bun" value = 'gluten-free-bun'>
+                <label for = "gluten-free-bun">Gluten Free</label>
+                <input type="radio" name = "bun-type" id = "no-bun" value = "no-bun"> 
+                <label for = "no-bun">No Bun</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="garnish-wrapper">
+            <div class="section-wrapper">
+              <div class="garnish-text-wrapper">
+                <h4 class = "input-type">Garnish</h4>
+              </div>
+              <div class="garnish-input-wrapper">
+                <input type="checkbox" name = "garnish" id="lettace-garnish" value = "lettace-garnish">
+                <label for="lettace-garnish" class = 'lettace'>Lettace</label>
+                <input type="checkbox" name = "garnish" id="tomato-garnish" value = "tomato-garnish">
+                <label for="tomato-garnish">Tomato</label>
+                <input type="checkbox" name = "garnish" id="pickle-garnish" value = "pickle-garnish">
+                <label for="pickle-garnish">Pickles</label>
+                <input type="checkbox" name = "garnish" id="onions-garnish" value = "onions-garnish">
+                <label for="onions-garnish">Caramilsed Onions</label>
+                <input type = 'checkbox' name = 'garnish' id="kimchi-garnish" value = "kimchi-garnish">
+                <label for ='kimchi-garnish'>Kimchi</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="cheese-wrapper">
+            <div class="section-wrapper">
+              <div class="cheese-text-wrapper">
+                <h4 class = "input-type">Cheese</h4>
+              </div>
+              <div class="cheese-input-wrapper">
+               
+                <input type="checkbox" name = "cheese" id="cheddar-cheese" value = "cheddar-cheese">
+                <label for="cheddar-cheese">Cheddar</label>
+                <input type="checkbox" name = "cheese" id="brie-cheese" value = "brie-cheese">
+                <label for="brie-cheese">Brie</label>
+                <input type="checkbox" name = "cheese" id="feta-cheese" value = "fate-cheese">
+                <label for="feta-cheese">Feta</label>
+                <input type="checkbox" name = "cheese" id="no-cheese" value = "no-cheese">
+                <label for="no-cheese">No-cheese</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="sauce-wrapper">
+            <div class="section-wrapper">
+              <div class="sauce-text-wrapper">
+                <h4 class = "input-type">Sauce</h4>
+              </div>
+              <div class="sauce-input-wrapper">
+                
+                <input type = "checkbox" name = "sauce" id = 'tomato-sauce' value="tomato-sauce">
+                <label for="tomato-sauce">Tomato Sauce</label>
+                <input type = "checkbox" name = "sauce" id = 'mayo-sauce' value="mayo-sauce">
+                <label for="mayo-sauce">Mayo</label>
+                <input type = "checkbox" name = "sauce" id = 'french-sauce' value="french-sauce">
+                <label for="french-sauce">French-Glaze</label>
+                <input type = "checkbox" name = "sauce" id = 'no-sauce' value="no-sauce">
+                <label for="no-sauce">No Sauce</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit-wrapper">
+            <div class="section-wrapper">
+              <input type ="submit" name = "order" id = "order" value="Order">
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </main>
+         
+       </div>
+       <div class="tabcontent" id = "Bowl">Bowl form</div>
+        
+
+
+
+  </div>
+</body>
+
+<script>
+
+  const form = document.getElementById("burger-form");
+  const submit = document.getElementById("order");
+
+
+  function getFormData(){
+
+  const formData = new FormData();
+
+  console.log(formData);
+
+  }
+
+  submit.addEventListener('click', event =>{
+    
+    event.preventDefault();
+    getFormData();
+    //form.reset();
+    //console.log(form)
+  })
+
+ // form.submit();
+
+</script>
+</html>
