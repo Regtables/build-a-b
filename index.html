@@ -62,7 +62,7 @@
         
        <div class="tabcontent" id = "Burger">
 
-        <form class = "burger-form-wrapper"  method="GET" id = "burger-form">
+        <form class = "burger-form-wrapper" action="#"  method="GET" id = "burger-form">
 
           <!-- PROTEIN -->
           <div class="protein-wrapper">
@@ -71,13 +71,13 @@
                 <h4 class = "input-type">Protein</h4>
               </div>
               <div class="protein-input-wrapper">
-                <input type="radio" name = "protein-type" id = 'beef-protein' value="beef-protein" >
+                <input type="radio" name = "protein" id = 'beef-protein' value="beef-protein" >
                 <label for = "beef-protein" class="beef-patty">Beef</label>
-                <input type="radio" name = "protein-type" id = 'chicken-protein' value = 'chicken-protein'>
+                <input type="radio" name = "protein" id = 'chicken-protein' value = 'chicken-protein'>
                 <label for = 'chicken-protein' class = 'chicken-protein'>Chicken</label>  
-                <input type="radio" name = "protein-type" id = 'vegeterian-protein' value = 'vegeterian-protein'>
+                <input type="radio" name = "protein" id = 'vegeterian-protein' value = 'vegeterian-protein'>
                 <label for = "vegeterian-protein" class = "vegeterian-protein">Vegeterian</label>
-                <input type ="radio" name = "protein-type" id = 'vegan-protein' value = 'vegan-protein'>
+                <input type ="radio" name = "protein" id = 'vegan-protein' value = 'vegan-protein'>
                 <label for = 'vegan-protein' class = 'vegan-protein'>Vegan</label>
               </div>
               <div class="protein-doneness-wrapper">
@@ -97,13 +97,13 @@
                 <h4 class = "input-type">Bun:</h4>
               </div>
               <div class="bun-input-wrapper">
-                <input type = "radio" name = "bun-type" id = 'potato-bun' value="potato-bun">
+                <input type = "radio" name = "bun" id = 'potato-bun' value="potato-bun">
                 <label for = "potato-bun">Potato</label>
-                <input type = "radio" name = "bun-type" id = "seeded-bun" value = "seeded-bun">
+                <input type = "radio" name = "bun" id = "seeded-bun" value = "seeded-bun">
                 <label for = "seeded-bun">Seeded</label>
-                <input type= "radio" name = 'bun-type' id = "gluten-free-bun" value = 'gluten-free-bun'>
+                <input type= "radio" name = 'bun' id = "gluten-free-bun" value = 'gluten-free-bun'>
                 <label for = "gluten-free-bun">Gluten Free</label>
-                <input type="radio" name = "bun-type" id = "no-bun" value = "no-bun"> 
+                <input type="radio" name = "bun" id = "no-bun" value = "no-bun"> 
                 <label for = "no-bun">No Bun</label>
               </div>
             </div>
@@ -187,29 +187,5 @@
   </div>
 </body>
 
-<script>
-
-  const form = document.getElementById("burger-form");
-  const submit = document.getElementById("order");
-
-
-  function getFormData(){
-
-  const formData = new FormData();
-
-  console.log(formData);
-
-  }
-
-  submit.addEventListener('click', event =>{
-    
-    event.preventDefault();
-    getFormData();
-    //form.reset();
-    //console.log(form)
-  })
-
- // form.submit();
-
-</script>
+<script src = 'order.js'></script>
 </html>
